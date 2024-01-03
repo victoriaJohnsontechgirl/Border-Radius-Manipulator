@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <title>Border Radius Manipulator</title>
+</head>
+<body>
+    <h2>Border-Radius-Manipulator</h2>
+    
+    <div class="controllers">
+        <div id="box"></div>
+     
+    </div>
+  
+    <div class="input-wrapper">
+        <input type="number" id="topLeft" min="0" max="1000" step="1" value="0" oninput="updateBorderRadius()">
+        <input type="number" id="topRight" min="0" max="1000" step="1" value="0" oninput="updateBorderRadius()">
+        <input type="number" id="bottomLeft" min="0" max="1000" step="1" value="0" oninput="updateBorderRadius()">
+        <input type="number" id="bottomRight" min="0" max="1000" step="1" value="0" oninput="updateBorderRadius()">
+    </div>
+
+    <div class="copy-wrapper">
+        <div class="copy">
+            <pre id="cssProperties"></pre>
+        </div>
+        <button id="copy-btn" onclick="copyToClipboard()">Copy to clipboard</button>
+    </div>
+
+    
+
+    <!-- javascript link -->
+    <script src="app.js"></script>
+
+</body>
+</html>
